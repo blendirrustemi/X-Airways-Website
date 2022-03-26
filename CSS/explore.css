@@ -1,0 +1,154 @@
+body
+{
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+	background-color:rgba(229, 232, 234, 1); /* The background color for the body of the webpage */
+	width: 100%; /* 100% width use within the body of the webpage */
+	margin: auto; /* The margin of the webpage is set automatically  */ 
+	/* overflow-x: hidden; */
+
+}
+
+.reassurance {
+	padding-top: 60px; /* The length from inside its borders which space was created from the top, in this case the space was 60 pixels */
+	background-image: url(../Photos/bcg.jpg); /* The background image  */
+	height: 200px; /* The height for the element  */ 
+}
+
+.text
+ {
+ 	padding-top: 70px; /* The length from inside its borders which space was created from the top, in this case the space was 70 pixels */
+ 	padding-right: 20px; /* The length from inside its borders which space was created from the right, in this case the space was 20 pixels */
+ 	color: #041c32; /* The color of the text */ 
+	text-align: right; /* The alignment of the text,in this case to the right*/
+ }
+ .nav_left a{
+    text-decoration: none; /* The text decoration of the links on the left of the navbar, set to none */
+    color: #041C32; /* The color of the links */
+    font-size: 17px; /* The font size of the links */
+}
+
+.nav_left a:hover{
+    transform: scale(1.15, 1.15); /* This is for some movement of the link when the mouse hovers over the element */
+    transition: 100ms ease-in-out ; /* This is the time and method set for the transition of the element when the mouse hovers over it */ 
+}
+
+.nav_right a{
+    text-decoration: none; /* The text decoration of the links on the right the navbar, set to none */
+    font-size: 18px; /* The font size of the links */
+    color: #041c32; /* The color of the links */
+    
+}
+
+.nav_right a:hover{
+    transform: scale(1.15, 1.15); /* This is for some movement of the link when the mouse hovers over the element */
+    transition: 100ms ease-in-out ; /* This is the time and method set for the transition of the element when the mouse hovers over it */
+}
+
+.navbar {
+    background-color: rgba(137, 138, 139, 0.2); /* The background color for the navbar */
+    position: sticky; /* This is so that this element sticks even when you roll down the webpage */
+    top: 0%; /* This means the navbar will be on top */
+    display: flex; /* This is to make the navbar flexible */
+    justify-content: space-between; /* This is so the elements all have space between them */
+}
+
+.navbar div {
+    display: flex; /* This is to make the elements flexible */
+    justify-content: space-between; /* This is so the elements inside the div all have space between them */
+}
+
+.nav_left{
+    color: #041C32; /* The color of the elements at the left of the navbar */
+    align-items: center;  /* The alignment of the text,in this case in the center*/
+}
+
+.nav_left div{
+    margin: 0 20px; /* This is to set the margin, top is 0 and right is 20 pixels */
+}
+
+.nav_right{
+    align-items: center; /* Alignment of the items in the center */
+}
+
+.nav_right div{
+    margin: 0 20px; /* This is to set the margin, top is 0 and right is 20 pixels */
+}
+
+.places {
+	margin-top: 60px; /* This is to set the margin up top to 60 pixels */
+	margin-bottom: 50px; /* This is to set the margin to the bottom to 50 pixels */
+	display: flex; /* This is to make the elements flexible */ 
+	flex-direction: row; /* This is to set the direction in which the elements can flex */
+	justify-content: space-evenly; /* This is so the elements inside the div all have space evenly between them */
+}
+
+#resize
+{
+	width: 500px; /* This is to set the width of the elements, in this case to 500 pixels */
+	height: 260px; /* This is to set the height of the elements, in this case to 260 pixels */
+}
+
+#resize1
+{
+	width: 500px; /* This is to set the width of the elements, in this case to 500 pixels */
+	height: 140px; /* This is to set the height of the elements, in this case to 120 pixels */
+}
+
+footer
+{ 
+	/* background-image: linear-gradient(to right,#f1f1f1,#041C32); */
+	background-color: #041C32; /* The background color for the footer */
+	color: whitesmoke; /* The color of the footer */
+	padding-top: 10px; /* The length from inside its borders which space was created from the top, in this case the space was 10 pixels */
+	padding-bottom: 40px;  /* The length from inside its borders which space was created from the bottom, in this case the space was 40 pixels */
+	font-weight: bolder; /* The weight of the text or the boldness of it, in this case it is set to "boldness" meaning it it more bold than normal */
+	height: 50px; /* The height of the footer, set to 50 pixels */
+	width: 100%; /* The width of the footer set to 100% */
+	margin: -10px 0 -10px 0; /* The margin of the footer set to -10 pixels from the top, 0 from the right, -10 pixels from the bottom and 0 from the left */
+}
+
+
+.container
+{
+	color: whitesmoke; /* The color is set to whitesmoke */
+	max-width: 1200px; /* Maximum width allowed is 1200 pixels */
+	margin-left: 20px; /* Margin set from the left to 20 pixels */
+
+}
+
+.container a{
+	text-decoration: none; /* Text decoration, set to none */
+	color: whitesmoke; /* Color set to whitesmoke */
+}
+
+.js
+{
+	float: right; /* The elements will float to the right side */
+}
+
+.btn 
+{
+	float: right; /* The element will float to the right side */
+	margin-right: 10%; /* Margin from the right side set to 10% */
+	margin-top: -3.2%; /* Margin from the top set to -3.2% */
+}
+
+.scl 
+{
+    color: whitesmoke; /* Color set to whitesmoke */
+    background-color: #041C32; /* Background color set to the hexadecimal code: "#041C32" */
+    border: none; /* No border for this element */
+    border-radius: 10px; /* The radius of the border set to 10 pixels */
+    width: 120%; /* Width of the element set to 120% */
+    height: 30px; /* The height of the element set to 30 pixels */
+}
+
+.scl:hover{
+    background-color: #00b7ff; /* The background color of when hovered set to the hexadecimal code: "#00b7ff" */
+    transition: 180ms ease-in-out; /* Transition time and method is set */
+}
+
+#right 
+{
+	color: whitesmoke; /* Color set to whitesmoke */
+}

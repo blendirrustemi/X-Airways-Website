@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hotels</title>
+    <link type="text/css" rel="stylesheet" href="CSS/hotels.css">
+</head>
+
+<body>
+    <!--We first make a div for the navigation bar on top of the page and give it a class which we'll use to 
+    modify the common characteristics of each side of the navbar-->
+    <div class="navbar">
+        <!--List of links in the navigation bar-->
+        <div class="nav_left">
+            <!--Separate the right and left portion of the navigation bar-->
+            <div>
+                <!--new div that will contain the brand name-->
+                <a href="main_page.html">
+                    <h3>ERMIRI AIRWAYS</h3>
+                </a>
+            </div>
+        </div>
+        <div class="nav_right">
+            <!--div that contains the right portion, the links-->
+            <div class="lnk1"><a href="hotels.html">Hotels</a> </div>
+            <!--assign a common class to all links that are also divs-->
+            <div class="lnk1"><a href="contact_us.html">Contact Us</a></div>
+            <div class="lnk1"><a href="explore.html">Explore</a></div>
+            <div class="lnk1"><a href="about_us.html">About Us</a> </div>
+        </div>
+    </div>
+    <div class="banner">
+        <!--this div will contain the text on top-->
+        <div class="text">
+            <!--div for the booking text-->
+            <h1>Book Hotels Around the World</h1>
+            <h2>Book hotels around the globe <br> and earn discount deals per each <br> booking!</h2>
+            <div class="button">
+                <!--new div for the button within the text div-->
+                <a href="main_page.html">Book Your Stay</a>
+                <!--this button will act as a link to another page-->
+            </div>
+        </div>
+    </div>
+    <div class="boxes">
+        <!--new div for the content below the banner-->
+        <div class="box box1">
+            <!--Create two classes so we can define what they have in common and what they don't in css-->
+            <h4>Find Hotels</h4>
+            <p>Find the one perfect spot <br>from 100,000 different places <br>around the world.</p>
+        </div>
+        <div class="box box2">
+            <!--same as box1-->
+            <h4>Book Quicker</h4>
+            <p>Get yourself to vacation time <br> as fast as possible.</p>
+        </div>
+        <div class="box box3">
+            <!--same as box1 and box2-->
+            <h4>Earn Discount Deals</h4>
+            <p>Win thousands in discount <br>deals towards free trips and <br>vacations.</p>
+        </div>
+    </div>
+    <div class="offer">
+        <!--new div for the section box below the informational boxes-->
+        <h3>Some of our best hotelier partners offer <br> vacation deals in places such as:</h3>
+    </div>
+    <!--Divs for the hotel recommendations-->
+    <div class="hotelrecommendations1">
+        <!--one div with a class for the entire portion of recommended hotels-->
+        <div class="hotelrec">
+            <!--this div and the div below will share similar attributes so we give the same class name-->
+            <a href="https://www.youtube.com/watch?v=7S7smPw9EiE"><img id="ny" src="Photos/newyork4.jpg"></a>
+            <!--Have the images be links and id's for hover effects in css-->
+            <a href="https://www.youtube.com/watch?v=Ex2iAyaEElQ"><img id="dubai" src="Photos/dubai4.jpg"></a>
+            <a href="https://www.youtube.com/watch?v=X8zLJlU_-60"><img id="london" src="Photos/london4.jpg"></a>
+        </div>
+        <div class="hotelrecommendations2">
+            <!--new div sectoin containing 3 image links-->
+            <div class="hotelrec">
+                <!--same as uptop-->
+                <a href="https://www.youtube.com/watch?v=MxcJtLbIhvs"><img id="chairs" src="Photos/chairs4.jpg"></a>
+                <a href="https://www.youtube.com/watch?v=0nTO4zSEpOs"> <img id="tokyo" src="Photos/tokyo.jpg"></a>
+                <a href="https://www.youtube.com/watch?v=1_5n1EfcWyM"><img id="bridge" src="Photos/bridge.jpg"></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <!--the footer as an html element, we don't assign a class and will just use the selector-->
+        <div class="container">
+            <!--div for the textual content in the footer-->
+            &copy; Copyright, 2020. <br>
+            <a href="#">Contact us: emrmiriairways@gmail.com</a>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

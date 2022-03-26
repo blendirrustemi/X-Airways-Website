@@ -1,0 +1,236 @@
+/*We start by specifying the characteristics that are common to all elements within the page*/
+/*div {border: solid red 1px;} */
+html {
+    scroll-behavior: smooth; /* add a smoother effect when scrolling */
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    min-width: 930px; /*define the minimum width of the body*/
+    top: 0; /*no extra spcae at the top*/
+    left: 0; /*-||- left*/
+    right: 0; /* -||- -||- right*/
+    width: 100%; /*define it in % so that it doesn't have a fixed size when loading up as a page on different devices; it remains at the same scale */
+    margin: 0; /*no space outside the border of the body*/ 
+    background-repeat: no-repeat; /*so the background doesn't repeat all throughout the page*/
+}
+
+.banner {   /*the background image on the banner */
+	padding-top: 60px; /* the distance from the top of the page */
+	background-image: url(../Photos/custombgimage.jpg); /*here we link the image of the banner*/
+	height: 750px; /* pick how "tall" the banner will be displayed on the page as*/
+}
+
+.nav_left a {
+    text-decoration: none; /*removes the underline*/
+    color: #074e67; /* the color of the logo/airline name */
+    font-size: 17px; /*assign the size of the font*/
+}
+
+.nav_left a:hover { /* attributes displayed when we hover over the brand name */
+    transform: scale(1.15, 1.15); /* we increase the width and height of the logo by 1.15 times of its original width and height */
+    transition: 100ms ease-in-out; /*0.1s delay with a slow start and end*/
+}
+
+.nav_right a { /*Hotels, Contact Us, About Us, Explore Links */
+    text-decoration: none; /* removes underline*/
+    font-size: 18px; /* the size of the hotel, contact us, explore, and about us links */
+    color: #074e67; /* color of the aforementioned elements*/
+}
+
+.nav_right a:hover { /* the attributes the elements display when the mouse moves over */
+    transform: scale(1.15, 1.15); /* same as nav left */
+    transition: 100ms ease-in-out ; /* same as nav left*/
+}
+
+.navbar { /* the entire navbar div */
+    background-color: rgba(229, 232, 234, 0.8); /*the color and opacity */
+    position: sticky; /* the navigation bar will stick to the user's scrolling position*/
+    top: 0%; /*0% down from the top edge of the page */
+    /* background-image: linear-gradient(to left, #7267CB, #B8E4F0); */
+    display: flex; /* will fit the available space*/
+    justify-content: space-between; /*display the items with space between the lines */
+}
+
+.navbar div { /*this goes for all the div elements under the .navbar div */
+    display: flex; /*will fit the available space */
+    justify-content: space-between; /*display the items with equal space between them */
+}
+
+.nav_left {
+    color: #041C32;
+    align-items: center;
+}
+
+.nav_left div {
+    margin: 0 20px; /* 0 for top and bottom, 20px for left and right*/
+}
+
+.nav_right {
+    align-items: center; /* items within the flexible div navbar are centrally aligned*/
+}
+
+.nav_right div { 
+    margin: 0 20px; /* o for top and bottom, 20px for left and right */
+}
+
+.text {
+    position: absolute; /*we define the position of this div in precice terms not relative to the edge of the previously defined element*/
+    display: block; /* takes of the whole width as a block element */
+    left: 120px; /*distance from the left of the page*/
+    top: 210px; /* distance from the top of the navbar element */
+    color: white; /*color of the elements within this div */
+    height: 400px; /* the height of this div*/
+    width: 60%; /*width is responsive and takes about 60% of the page regardless of display scale*/ 
+    font-size: 25px; /*the size of the text*/
+} 
+
+.button {
+    border-radius: 8px; /* rounds the corners */
+    background-color: whitesmoke; /*gives a background color to this div that will act as a button*/
+    height: 40px; /*height of the button div */
+    width: 300px; /* width of the button div */
+    text-align: center; /*the text inside the button is centrally aligned */
+    padding-top: 5px; /* the text is 4px down from the top edge of the button div*/
+    padding-right: 6px; /* the text is 6px left from the right edge of the button div*/
+    padding-bottom: 2px; /* 2px up from the bottom edge of the button div/"box"*/
+}
+
+.button:hover { /* same upscaling and transition speed for the button as for the rest of the elements*/
+    transform: scale(1.15, 1.15);
+    transition: 100ms ease-in-out;
+}
+
+.button a {
+    text-decoration: none; /*removes the underline from the link*/
+    color: darkblue; /*color of the link */
+}
+
+.boxes { /* new div for the additional information section*/
+    width: 100%; /*will take up 100% of the page width regardless of display scale/layout */
+    height: 300px; /* height of this section */
+    margin:auto; /*margins are of equal distance*/
+} /*rubric section below the banner*/
+
+.box { /*define all the common characteristics of the box divs*/
+    /*since they're block elements, we specify their positions*/
+    width: 280px; /* width of all 3 boxes*/
+    height: 180px; /* height of all 3 boxes*/
+    font-size: 18px; /*size of the font*/
+    text-align: center; /* text in each div is centrally aligned */
+    padding-top: 50px; /*50px down from the topedge of the boxes div*/
+} 
+
+.box1 { /* the first informational box*/
+    float: left;  /* the box will float to the left (and in case other elements would wrap around it)*/
+    margin-right: 290px; /*add margins to shrink the distance between the box divs, distance outside the border of the div from the right */
+    margin-left: 250px; /*distance outside the border of the div from the left */
+} /*add margins to shrink the distance between the box divs*/
+
+.box1:hover { /*what happens when the mouse moves over this box*/
+    transform: scale(1.15, 1.15); /* its width and height are increased by 1.15 of its original size */
+    transition: 100ms ease-in-out; /*the 0.1s upscaling has as slow start and end*/
+}
+
+.box2 {
+    float: left; /* element floats to the left */
+}
+
+.box2:hover { /* same as box 1 hover */
+    transform: scale(1.15, 1.15);
+    transition: 100ms ease-in-out;
+}
+
+.box3 { /* this time this element floats to the right of the page*/
+    float: right; 
+    margin-right: 250px; /*the margin outside the border from the right of the div */
+}
+
+.box3:hover { /*same as box1 and box2 */
+    transform: scale(1.15, 1.15);
+    transition: 100ms ease-in-out;
+}
+
+.offer {
+    margin: auto; /* so its centered*/
+    width: 100%; /* takes up 100% of the width of the page, not fixed size */
+    position: relative; /* positioned relative to its normal position*/
+    display: block; /*will take up the entire line */
+}
+
+.offer h3 {/*for the actual text within the offer div*/
+    color: black; 
+    font-size: 23px; 
+    text-align: center; /* etxt is centrally aligned */
+}
+
+.hotelrecommendations1 { /*for the new div containing the hotel recommendations*/
+    margin-left: 13.5%;  /*it will be 13.5% right from the left of the page regardless of display scale/layout*/
+    max-width: 100%; /* will take up 100% of the size of the screen*/
+}
+
+/*add padding for each separate picture, all 4 sides */
+#ny {padding: 30px;}
+#dubai {padding: 30px;}
+#london {padding: 30px;}
+#chairs {padding: 30px;}
+#bridge {padding: 30px;}
+#tokyo {padding: 30px;} 
+/*scale and trnasition time for each picture when we hover, since they're bigger photos, we delay their transition for a bit more*/
+#ny:hover {transform: scale(1.15, 1.15);
+    transition: 170ms ease-in-out;}
+#dubai:hover {transform: scale(1.15, 1.15);
+    transition: 170ms ease-in-out; }
+#london:hover {transform: scale(1.15, 1.15);
+    transition: 170ms ease-in-out;}
+#chairs:hover {transform: scale(1.15, 1.15);
+    transition: 170ms ease-in-out;}
+#bridge:hover {transform: scale(1.15, 1.15);
+    transition: 170ms ease-in-out;}
+#tokyo:hover {transform: scale(1.15, 1.15);
+    transition: 170ms ease-in-out;} 
+
+.hotelrecommendations2 { /*padding at the bottom so it looks more spaced out*/
+    padding-bottom: 60px;
+}
+
+.container { /* the div at the bottom of the page containing the text */
+    max-width: 1200px; /*the maximum amount of width it can take up in a screen */
+    margin: auto; /*equal margins from all sides */
+    color: whitesmoke;
+}
+.container a { /* the div at the bottom of the page containing the text */
+    max-width: 1200px; /*the maximum amount of width it can take up in a screen */
+    margin: auto; /*equal margins from all sides */
+    color: whitesmoke;
+}
+
+footer { /*this is the footer element not a div */
+    background-color: #041C32; /*linear gradient from the left*/
+    color: navy; 
+    padding-top: 30px; /*30px down from the top edge of the footer border */
+    padding-bottom: 30px; /*30px up from the bottom edge of the footer border */
+    font-weight: bolder; /*the weight of the font*/
+    width: 100%; /*takes up 100% of the page regardless of display scale/layout*/
+}
+
+
+#myBtn { /* Calls and edits the button which goes up the page*/
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #041C32;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }

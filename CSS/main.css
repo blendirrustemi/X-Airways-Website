@@ -1,0 +1,177 @@
+html { /* called all of the html in the main_page.html*/
+    scroll-behavior: smooth; /* makes scrolling through page smoother*/
+}
+
+body { /* Calls the body part of the file*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    min-width: 930px; /* The minimum width the body file can go before stopping*/
+    top: 0; /* Positions the body part 0px from the top*/
+    left: 0; /* Positions the body part 0px from the left*/
+    width: 100%; /* The width of the body part is 100% the page*/
+    margin: 0; /* Margins are 0 around the body part*/
+    background-image: url(../Photos/airplane1.jpg); /* Inserts the airplane1 image into the body part*/
+    background-repeat: no-repeat; /* The image is not repeated*/
+}
+
+.navbar { /* Calls the div of the navigation bar*/
+    background-color: rgba(229, 232, 234, 0.2); /* Changes the div's color and alpha */
+    position: sticky; /* It makes it stick to the screen and not move while scrolling*/
+    top: 0%; /* it is positioned 0% on the top*/
+    display: flex; /* The layout display is flex*/
+    justify-content: space-between; /* Divs inside are justified with space between*/
+}
+
+.navbar div { /* It calls all the divs inside the navbar*/
+    display: flex; /* all the divs are in the layout of flex*/
+    justify-content: space-between; /* are placed in a space-between*/
+}
+
+.nav_left a { /* all links inside the navigation bar left side are called*/
+    text-decoration: none; /* all their text decorations are removed*/
+    color: #041C32; /* and are colored with #041d32*/
+    font-size: 17px; /* links font size are 17px*/
+}
+
+.nav_left a:hover { /* calls when the <a> tags are hovered */
+    transform: scale(1.15, 1.15); /* they are scaled to 1.15*/
+    transition: 100ms ease-in-out;  /* this transition takes 100ms to complete */
+}
+
+.nav_right a { /* all links inside the navigation bar right side are called*/
+    text-decoration: none; /* all their text decorations are removed*/
+    font-size: 18px; /* links font size are 18px*/
+    color: whitesmoke; /* text is colored with whitesmoke*/
+}
+
+.nav_right a:hover { /* calls when the <a> tags are hovered */
+    transform: scale(1.15, 1.15); /* they are scaled to 1.15*/
+    transition: 100ms ease-in-out; /* this transition takes 100ms to complete */
+}
+
+.nav_left { /* calls the left div of the nav_bar */
+    color: #041C32; /* assigns a color */
+    align-items: center; /* positions elements in the center */
+}
+
+.nav_left div { /* calls all the divs inside the left part of the navigation bar*/
+    margin: 0 20px; /* Adds a margin of 0 and 20px*/
+}
+
+.nav_right { /* calls the right div of the navigation bar*/
+    align-items: center; /* align the elements in center*/
+}
+
+.nav_right div { /*calls all the divs inside the right side of the navigation bar */
+    margin: 0 20px; /* Adds a margin of 0 and 20px*/
+}
+
+.main_form { /* Div Main For The Page */
+    display: flex; /* The main_form is displayed in the flex form*/
+    align-items: center; /* the elements are aligned on center*/
+    flex-direction: row; /* The elements are arranged in the row */
+    justify-content: space-evenly; /* All elements have the same space around them*/
+    width: 100%; /* The main form is 100% of the body*/
+    margin-top: 200px; /* The top margin of this form are 200px*/
+    margin-bottom: 370px; /* Also the bottom margins are 370px*/
+}
+
+.book_h1 { /* The h1 div is called*/
+    font-size: 30px; /* H1 font is 30px*/
+    width: 20%; /* It is with a width of 20% of the main_form*/
+    color: #041C32; /* And has this color*/
+}
+
+.book_h1, .app_form { /* h1 and the rectangle with forms are called to assign same value*/
+    margin-left: 10%; /* both have left-margins of 10% the main_form*/
+}
+
+.app_form { /* Rectangle For The Forms */
+    width: 600px; /* Width of the rectangle is 600px*/
+    height: 350px; /* Height: 350px*/
+    background-color: whitesmoke; /* The div has a whitesmoke background color*/
+    opacity: 90%; /* the div's opacity is 90%*/
+    border-radius: 5%; /* has rounded corners of 5%*/
+}
+
+.fly_from, .fly_to, .depart_date, .return_date { /* Calls the first 4 forms, fly from, fly to, depart date and return date*/
+    border-radius: 5px; /* all these inputs have 5% border radius*/
+    border: 1px solid darkgray; /* inputs have 1px border with darkgray color*/
+    height: 50px; /*all inputs have a height of 50px*/
+    margin-top: 15%; /* all inputs have a top margin op 15%*/
+}
+
+.adults, .child { /* Calls the adult and child input types*/
+    border: 1px solid darkgray; /*both have a 1px solid darkgray border */
+    border-radius: 5px; /* Both inputs have a 5px border radius */
+    height: 50px; /* The heights are 50px*/
+    width: 80%; /* Both have a width of 80% the whole app_form*/
+    margin-top: 15%; /* They have a 15% top margin*/
+}
+
+.travel { /* Calls the travel drop down menu*/
+    border: 1px solid darkgray; /* The travel drop down menu has 1px solid darkgray border*/
+    border-radius: 5px; /* it has a rounded corner of 5px*/
+    height: 50px; /* height of this input is 50px*/
+    width: 100%; /* it has the width 100% of the form*/
+    margin-top: 23%; /* Its top margins are 23%*/
+    margin-left: -117%; /* it has a -117% left margin*/
+}
+
+.fly_from, .fly_to, .depart_date, .return_date, .adults, .child, .travel {/* Calls all the input forms to change opacity, text alignment and padding */
+    padding: 3px; /* The padding of these inputs is 3px*/
+    text-align: center; /* They are aligned on center*/
+    opacity: 50%; /* All of these inputs have an opacity of 50%*/
+}
+
+.fly_from:hover, .fly_to:hover, .depart_date:hover, .return_date:hover, .adults:hover, .child:hover, .travel:hover { /* Assigns the values when the user hovers above the input forms*/
+    opacity: 100%; /* it changes the opacity to 100%*/
+    transition: 180ms ease-in-out; /* with the transition of 180ms ease-in-out type*/
+}
+
+.fly_from_div, .depart_date, .adults { /* calls the divs to align them inside the form*/
+    margin-left: 10%; /* it adds a 10% left margin*/
+}
+
+.fly_to_div, .return_date, .child { /* calls the right side column of the input form*/
+    position: relative; /* it positions these inputs in the relative position*/
+    margin-left: 120%; /* it adds a 120% left margin to all these*/
+}
+
+.fly_to_div { /*Calls the fly to div*/
+    top: 12px; /* adds top 12px*/
+}
+
+.flight_btn { /* Calls the button to Show Flights*/
+    color: whitesmoke; /* The text color inside the button is whitesmoke*/
+    background-color: #041C32; /* The buttons background color is #041C32*/
+    border: none; /* It removes its borders*/
+    border-radius: 10px; /* adds a 10px border radius*/
+    margin-left: 97%; /* has a left margin of 97% of the form*/
+    margin-top: 15%; /* adds a 15% top margin to position correctly*/
+    width: 120%; /* Has a width of 120% of the entire form*/
+    height: 40px; /* The button has a height of 40px*/
+}
+
+.flight_btn:hover { /* Change values when button is hovered*/
+    background-color: #00b7ff; /* Change the background color to#00b7ff when hovered*/
+    transition: 180ms ease-in-out; /* this transition takes 180ms to complete*/
+}
+
+.second_part { /* Calls the seoncd part of the body with its class*/
+    display: flex; /* makes the display flex*/
+    align-items: center; /* aligns the elements inside on center*/
+    flex-direction: row; /* position its elements into row*/
+    justify-content: space-evenly;  /* all elements have the same spaces*/
+    color: whitesmoke; /* its color is whitesmoke*/
+    font-weight: 300; /* with a 300 font-weight*/
+    font-size: 30px; /* and a font size of 30px*/
+    width: 100%; /* the second_part has a width of 100% of the body*/
+    height: 200px; /* and a height of 200px*/
+    background-color: #041C32; /* its background color is #041c32*/
+}
+
+.test123 { /* Calls the div of the paragraph .testh1*/
+    position: absolute; /* Positions it absolute */
+    font-size: 40px; /* Adds a font-size of 40px */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Adds the fonts*/
+}

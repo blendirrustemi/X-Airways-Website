@@ -1,0 +1,279 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    /*min-width is used to determine the min size thebody can reach when minimizing the page*/
+    min-width: 930px;
+    /*top used to specify the margin on the top, and left for the margins on the left*/
+    top: 0;
+    left: 0;
+    /*We did width: 100%, in order to make its content area, equal to the other elements' width*/
+    width: 100%;
+    margin: 0;
+    /*background-image was used to put a picture as a background image and we specified the location of the picture*/
+    background-image: url(../photos/uzi1.jpg);
+    /*background-color was used to specify the color of the background*/
+    background-color: rgba(229, 232, 234, 1);
+    /*background-repeat was used to not repeat the picture even if it doesn't fully cover it, and the image will be shown only once*/
+    background-repeat: no-repeat;
+}
+
+html{
+    /*This was used so the user instead jumping from link to link which is scrolable it will animate it*/
+    scroll-behavior: smooth;
+}
+
+footer {
+    /*background-color was used to specify the color of the footer*/
+    background-color: #041C32;
+    /*color whitesome was choosen for the text displayed in the footer*/
+    color: whitesmoke;
+    /*padding on the top was specified 10px to fix its position*/
+    padding-top: 10px;
+    /*padding on the bottom was specified 40px to fix its position*/
+    padding-bottom: 40px;
+    /*font-weight bolder was used to make the font more bold than it is already*/
+    font-weight: bolder;
+    /*Height was specified 50px because we thought that was the appropriate amount for the footer to be displayed*/
+    height: 50px;
+    /*We did width: 100%, in order to make its content area, equal to the other elements' width*/
+    width: 100%;
+    /*this was used to specifiy the margints top, bottom, left, and right*/
+    margin: -10px 0 -10px 0;
+}
+
+.nav_left a{
+    /*since its a link we want it to not showcase the underline, that is why we used text-decoration none*/
+    text-decoration: none;
+    /*we wanted to specify the color of the text in links with the command color*/
+    color: #041C32;
+    /*font-size was used to change the size of the font of the links*/
+    font-size: 17px;
+}
+
+.nav_left a:hover{
+    /*transform/scale was used when hovering above the links in the "nav_left" div the text would zoom for 1.15*/
+    transform: scale(1.15, 1.15);
+    /*this zoom would take 100ms to implement and to make it a smoother transistion we used ease-in-out*/
+    transition: 100ms ease-in-out ;
+}
+
+.nav_right a{
+
+    /*the links on the "nav_right" div will have no underline*/
+    text-decoration: none;
+    /*the links on the "nav_right" div will have the size of the font as specified below*/
+    font-size: 18px;
+    /*this will change the color of the links on the "nav_right" div into whitesmoke*/
+    color: whitesmoke;
+    
+}
+
+.nav_right a:hover{
+    /*transform/scale was used when hovering above the links in the "nav_right" div the text would zoom for 1.15*/
+    transform: scale(1.15, 1.15);
+    /*this zoom would take 100ms to implement and to make it a smoother transistion we used ease-in-out*/
+    transition: 100ms ease-in-out ;
+}
+
+.navbar {
+     /*background-color was used to specify the color of the "navbar"div*/
+    background-color: rgba(229, 232, 234, 0.2);
+    /*position sticky was used to keep the navbar on top when scrolling down*/
+    position: sticky;
+    /*top 0 was used for the margin top of the navbar*/
+    top: 0%;
+    /*display flex is used to prevent the overflow of the element on the navabr div*/
+    display: flex;
+    /*justify-content is used for the broser to distribute the space between elements*/
+    justify-content: space-between;
+}
+
+.navbar div {
+    /*we used them for the same purpose as above^^^*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_left{
+    /*color was used to specify the color of the text in the div "nav_left*/
+    color: #041C32;
+    align-items: center;
+}
+
+.nav_left div{
+    /*margin was used to specify the margins of the nav_left div*/
+    margin: 0 20px;
+}
+
+.nav_right{
+    align-items: center;
+}
+
+.nav_right div{
+    /*same as the as for the div nav_left*/
+    margin: 0 20px;
+}
+
+
+
+.body_part{
+    /*same as mentioned above^^*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /*same as mentioned above*/
+    justify-content:space-between;
+    width: 100%;
+    margin-top: 443px;
+    font-size: 20px;
+    
+}
+
+.us{
+    /*specify the width of the us div*/
+    width: 90%;
+}
+
+.staff{
+    /*dislay flex to make the elements on the div staff reponsive*/
+    display: flex;
+    /*to distribute the spave evenly between the elements*/
+    justify-content: space-evenly;
+    /*specify the width of the staff div*/
+    width: 90%;
+}
+
+.suzi{
+    /*specify the width of the suzi div*/
+    width: 30%;
+}
+
+.suzana{
+    /*to specify the marings on the right of the div suzana*/
+    margin-right: 10px;
+}
+
+
+.hr{
+    /*we specified the width 90% of the hrs on the page, with each having 15px margin on the bottom and on the top*/
+    width: 90%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+
+
+.interior{
+    /*as mentioned above, used for the same purpose*/
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row-reverse;
+}
+
+.interior_text{
+    /*specify the width of the interior_text div*/
+    width: 30%;
+    
+}
+
+.classes{
+    /*as mentioned above, used for the same purpose*/
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 70%;
+}
+
+.first_class, .second_class{
+     /*specify the width of the first_class and second_class divs*/
+    width: 50%;
+}
+
+.second_class{
+     /*specify the margin on the lef of the second_class div*/
+    margin-left: 20%;
+}
+
+
+
+.container
+{
+    /*color whitesmoke was chosen for the text on the container div*/
+	color: whitesmoke;
+    /*if we zoom out the page te max width that the div container can have is 1200px*/
+	max-width: 1200px;
+    /*the margin left of the container div is 20px*/
+	margin-left: 20px;
+
+}
+
+.container a{
+    /*the links on the div container will have no decoration such as underline*/
+	text-decoration: none;
+    /*the text of the links will be whitesmoke*/
+	color: whitesmoke;
+}
+
+.js
+{
+    /*the div js will be displayed on the right side of the screen*/
+	float: right;
+}
+
+.btn 
+{
+    /*the div btn will be displayed on the right side of the screen*/
+	float: right;
+    /*the margin on the righ for the div btn is 10%*/
+	margin-right: 10%;
+    /*the margin on the top for the div btn is -2.9%*/
+	margin-top: -4%;
+}
+
+.scl 
+{
+    /*the color of the text on the div scl will be wwhitesmoke*/
+    color: whitesmoke;
+    /*the background color of the div scl is specified*/
+    background-color: #041C32;
+    /*the div will have no colored border*/
+    border: none;
+    /*the border will have a rounded corners of 10px*/
+    border-radius: 10px;
+    /*the width of the scl div is specified 120%*/
+    width: 120%;
+    /*the height of the div scl is 40px*/
+    height: 40px;
+}
+
+.scl:hover{
+    /*when you hover on the scl div it will change it background color to whats specified*/
+    background-color: #00b7ff;
+    /*the transition of the color will take 180ms to occurr*/
+    transition: 180ms ease-in-out;
+}
+
+#right 
+{
+    /*the div with the id right will have the text with the color whitesmoke*/
+	color: whitesmoke;
+}
+
+#myBtn { /* Calls and edits the button which goes up the page*/
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #041C32;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }

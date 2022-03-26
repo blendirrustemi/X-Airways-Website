@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- On the head section we wrote the title About us, and we linked the HTML document with the external CSS sheet with the proper code href -->
+
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link rel="stylesheet" href="CSS/about_us_css.css">
+</head>
+
+<body>
+    <!-- We created the div "navbar" in order to style it in CSS, which contains two subdivs: the div whose class is "nav_left" which contains ERMIRI AIRWAYS, and the div whose class is "nav_right" which containt 4 other HTML pages -->
+    <div class="navbar">
+        <div class="nav_left">
+            <div>
+                <!-- This div contains the link which when you click sends you to the main page of the page "ERMIRI AIRWAYS", and we put in a div to look better when styling it in CSS -->
+                <a href="main_page.html">
+                    <h3>ERMIRI AIRWAYS</h3>
+                </a>
+            </div>
+        </div>
+        <!-- This div contains links to the other HTML pages that we created, and each of them got respective classes to style them in CSS, when you click them it sends you to the correspondent page< -->
+        <div class="nav_right">
+            <div class="lnk1"><a href="hotels.html">Hotels</a> </div>
+            <div class="lnk1"><a href="contact_us.html">Contact Us</a></div>
+            <div class="lnk1"><a href="explore.html">Explore</a></div>
+            <div class="lnk1"><a href="about_us.html">About Us</a> </div>
+        </div>
+    </div>
+    <!-- "body_part" div holds 7 additional divs which contain paragraphs with About Us information, and it makes it easier to make it responsive. -->
+    <div class="body_part">
+        <!-- "us" div holds the paragraph on US information, we put it on a div in order to look better when styling in CSS -->
+        <div class="us">
+            <h1>Us</h1>
+            <p>ERMIRI Airways provides you with the safest flight routes. Our prirority is making our passangers
+                comfortable and provide them with the best service. We always work on improving our quaity, and we
+                listen to your feedback. We also care about your financial status, thus we have offers all the time. In
+                our Offers we give our offers to you, the best from the market, while profiing at the same time. If you
+                want to subscribe to our newsleter to get the lattest offers and trips, it will cost only $15 per year
+            </p>
+        </div>
+        <!-- the div "hr" is to style the hrs on the page -->
+        <div class="hr">
+            <hr>
+        </div>
+        <!-- the div "staff" holds the paragraph explaining the staff members and the picture of the staff who are put in two different divs in order to make them responsive -->
+        <div class="staff">
+            <!-- this div "suzi" holds the text related to Meet Staff part, it holds one header to specify a title and a parahraph with info, and to position them better we put them in a div -->
+            <div class="suzi">
+                <h1>Meet Staff</h1>
+                <p>Each staff memeber is trained to first aid, and all the trainings needed to be conducted to be a
+                    flight attandent. Our pilots come from the most prestigious schools of Europe, and they have more
+                    than 10 years experience in flighting. We have never had any complaints in regards to the manner of
+                    fligh attendants.
+                </p>
+            </div>
+            <!-- This class "suzana" hold the picture for the paragraph on div "suzi" -->
+            <div class="suzana">
+                <img src="photos/suzi.jpg" alt="" width="620px">
+            </div>
+        </div>
+        <!-- the div "hr" is to style the hrs on the page -->
+        <div class="hr">
+            <hr>
+        </div>
+        <!-- The div "interior" holds the divs "interior_text" and "window" in order to position those two better when making the page responsive -->
+        <div class="interior">
+            <!-- This div "interior_text" holds one heading to specify the title Interior and paragraph explaining it, we put it in a div in order to style it better -->
+            <div class="interior_text">
+                <h1>Interior</h1>
+                <p>In commercial air travel, particularly in airliners, cabins may be divided into several parts. These
+                    can include travel class sections in medium and large aircraft, areas for flight attendants, the
+                    galley, and storage for in-flight service. Seats are mostly arranged in rows and aisles. The higher
+                    the travel class, the more space is provided. Cabins of the different travel classes are often
+                    divided by curtains, sometimes called class dividers. Passengers are not usually allowed to visit
+                    higher travel class cabins in commercial flights.</p>
+            </div>
+            <!-- This div "window" holds the picture for the paragraph on the div "interior_text" -->
+            <div class="window">
+                <img src="photos/seats.jpg" alt="">
+            </div>
+        </div>
+        <div class="hr">
+            <hr>
+        </div>
+        <!-- This div "classes" hold 2 subdivs which talk about 4 different classes on flights, we put them in a div for design purposes -->
+        <div class="classes">
+            <!-- The div "first_class" holds one heading for its title 'First Class' and a paragraph talking about it, and another heading "Premium Economy Class" and its paragraph explaining it, we put these two together due to their position onthe page, both being on the left side -->
+            <div class="first_class">
+                <h2>First Class</h2>
+                <p>The first class section of an airplane is the class with the best service, and it is typically the
+                    highest priced. The services offered are superior to those in business class, and they are available
+                    on only a small number of long flights.</p>
+                <h2>Premium Economy Class</h2>
+                <p>Premium Economy class is a travel class offered by some airlines in order to provide a better flying
+                    experience to the economy traveler, but for much less money than business class. It is often limited
+                    to a few extras such as more legroom, as well as complimentary food and drinks</p>
+            </div>
+            <!-- The div "second_class" holds two headings and two paragraphs, we put these together since they are both on the right side and its easier to fix their position on the page. The paragraphs talk about the 'Business Class' and 'Economy Class'-->
+            <div class="second_class">
+                <h2>Business Class</h2>
+                <p>Business class is more expensive, but it also offers more amenities to travelers than the classes
+                    below it. These may include better food, wider entertainment options, more comfortable seats with
+                    more room to recline and more legroom, among others.</p>
+                <h2>Economy Class</h2>
+                <p>Economy class is the airline travel class with the lowest ticket price, as the level of comfort is
+                    lower than that of the other classes. This class is primarily characterized by the short distance
+                    between each seat, and a smaller variety of food and entertainment.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer contains three divs and javascript code, we put all of them together to look better on the page -->
+    <footer>
+        <!-- The div "container" is used to put info on copyright and the email where they can conatct use, we put a dummy link because that email doesn't exist for real -->
+        <div class="container">
+            <p>&copy; Copyright, 2021.</p>
+            <a href="#">Contact us: support@ermiriairways.com</a>
+        </div>
+        <!-- The div "btn" is used to hold the button which will call the javascript function "getLocation()" and you can see at the end of the page, and it hold the div "right" where the function will be excecuted -->
+        <div class="btn">
+            <!-- This button was created to call the function "getLocation()" and we assignef it the class"scl" to style it bettter -->
+            <button type="button" onclick="getLocation()" class="scl">Show Current Location</button>
+            <!-- This div with the id"right" was assigned to excecute the function, and it will change its innerHTML if the function is supported by browser -->
+            <div id="right">
+            </div>
+        </div>
+        <!-- We assigned the script tag a class to make it float to the right, and contains the javascript code -->
+        <script class="js">
+            //We assigned variable x to get the HTML from the div with the id "right", into "Geolocation is not supported by this browser." if the function doesn't get excecuted.
+            var x = document.getElementById("right");
+            function getLocation() {
+                //if the function is supported by the browser, it will call the function "showPosition()"
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                } else {
+                    x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+            }
+            //when this function will be called, it will change the innerHTML of the div "right" into your current latitude and longitude 
+            function showPosition(position) {
+                x.innerHTML = "Latitude: " + position.coords.latitude +
+                    "<br>Longitude: " + position.coords.longitude;
+            }
+        </script>
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>

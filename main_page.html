@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ermiri Airways</title>
+    <link rel="stylesheet" href="CSS/main.css"> <!-- Link the corresponding CSS file to the main_page.html -->
+</head>
+
+<body>
+    <div class="navbar">
+        <!-- The navigation bar at the top, containing the name, and links to other html-s-->
+        <div class="nav_left">
+            <!-- Adding a DIV for the left part of the first "navbar" -->
+            <div>
+                <!-- Creating a div for the link and h3 below-->
+                <a href="main_page.html">
+                    <h3>ERMIRI AIRWAYS</h3>
+                </a> <!-- The top most left h3 tag, containing the name: Ermiri Airways -->
+            </div>
+        </div>
+        <div class="nav_right">
+            <!-- Creating the div for the right part of the navigation bar-->
+            <div class="lnk1"><a href="hotels.html">Hotels</a> </div>
+            <!-- First Link which sends you to the hotels.html-->
+            <div class="lnk1"><a href="contact_us.html">Contact Us</a></div>
+            <!--Second Link which redirects you to Contact Us page -->
+            <div class="lnk1"><a href="Explore.html">Explore</a></div>
+            <!-- Third Link which redirects you to the Explore page-->
+            <div class="lnk1"><a href="about_us.html">About Us</a> </div>
+            <!-- Last Link that redirects you to the About Us page-->
+        </div>
+    </div>
+    <div class="main_form">
+        <!-- Creating the div for the first part of the body, that is the airplane picture and the forms-->
+        <div class="book_h1">
+            <!-- the div for the header-->
+            <h1>Book Your Flight Today</h1> <!-- The main header (h1) which is in the left side of the screen-->
+        </div>
+        <div class="app_form">
+            <!-- Creates the div for the rectangle on the right side of the screen-->
+            <div class="table_div">
+                <!-- the div used for the input forms inside the app_form (rectangle)-->
+                <table>
+                    <!-- Creates the table which contains all the input forms-->
+                    <tr class="first_row">
+                        <!-- The first table row-->
+                        <td>
+                            <!-- The first table data -->
+                            <div class="fly_from_div">
+                                <!-- Contains the first input type, text-->
+                                <input class="fly_from" id="flyfrom" type="text" placeholder="City or airport">
+                            </div>
+                        </td>
+                        <td>
+                            <!-- The second table data, contains one div-->
+                            <div class="fly_to_div">
+                                <!-- the div that contains the second input type, that is the destination-->
+                                <input type="text" name="" class="fly_to" id="flyto" placeholder="City or airport">
+                                <!-- the input that created the form-->
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="second_row">
+                        <!-- The next table row created-->
+                        <td>
+                            <!-- The first table data in this second row-->
+                            <div class="depart_date_div">
+                                <!-- Div that contains one input-->
+                                <input type="date" class="depart_date" id="depart_date">
+                                <!-- Input type Date, to enter departure date-->
+                            </div>
+                        </td>
+                        <td>
+                            <!-- The next table data in the second row-->
+                            <div class="return_date_div"></div> <!-- Div that contains the return date input-->
+                            <input type="date" name="" id="return_date" class="return_date">
+                            <!-- The return date input type date-->
+            </div>
+            </td>
+            </tr>
+            <tr class="third_row">
+                <!-- The third row-->
+                <td>
+                    <!-- first table data in the third row-->
+                    <select name="Adults" class="adults" id="adults">
+                        <!-- Drop down menu to select the Adults number of people-->
+                        <option value="" selected disabled hidden>Adults (18+)</option>
+                        <!-- The placeholder for dropdown menu-->
+                        <option value="0">0</option>
+                        <!-- Five options below that user selects, with values from 0 to 5-->
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                <td>
+                    <!-- The next table data in the third row-->
+                    <select name="Children" class="child" id="child">
+                        <!-- Drop down menu to select the Children number of people-->
+                        <option value="" selected disabled hidden>Children (0-17)</option>
+                        <!-- The placeholder for drop down menu-->
+                        <option value="0">0</option>
+                        <!-- Five options below that user selcts, with values from 0 to 5-->
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                <td>
+                    <!-- The last table data for the third row-->
+                    <select name="Class" class="travel" id="travel">
+                        <!-- Drop down menu to select the flight class-->
+                        <option value="" selected disabled hidden>Travel Class</option>
+                        <!-- The placeholder for the drop down menu-->
+                        <option value="First Class">First Class</option> <!-- The first option is First Class-->
+                        <option value="Business Class">Business Class</option>
+                        <!-- The second option is Business Class-->
+                        <option value="Economy Class">Economy Class</option> <!-- The third option is Economy Class-->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <!-- The last table row for this table-->
+                <td>
+                    <!-- The last table data used for this table-->
+                    <button class="flight_btn" onclick="tickets()">Show Flights</button>
+                    <!-- The button used to show flights and calls the function: tickets() from javascript-->
+                </td>
+            </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+
+    <div class="second_part" id="second_part">
+        <!-- The Second Part of the Page, that is below the picture and the forms created above -->
+        <div class="from_div">
+            <!--Div created to write the Flying From place -->
+            <p id="flyfrom_paragraph"></p> <!-- The paragraph where values are going to be written-->
+        </div>
+        <div class="to_div">
+            <!--Div created to write the Flying To place -->
+            <p id="flyto_paragraph"></p> <!-- The paragraph where values are going to be written-->
+        </div>
+        <div class="depart_date_second">
+            <!--Div created to write the Departure Date -->
+            <p id="depart_paragraph"></p> <!-- The paragraph where values are going to be written-->
+        </div>
+        <div class="return_date_second">
+            <!--Div created to write the Return Date -->
+            <p id="return_paragraph"></p> <!-- The paragraph where values are going to be written-->
+        </div>
+        <div class="adults_second">
+            <!--Div created to write the Adults Value Number -->
+            <p id="adults_paragraph"></p> <!-- The paragraph where values are going to be written-->
+        </div>
+        <div class="child_second">
+            <!--Div created to write the Children Value Number -->
+            <p id="child_paragraph"></p> <!-- The paragraph where values are going to be written-->
+        </div>
+        <div class="travel_second">
+            <!--Div created to write the Class Value -->
+            <p id="travel_paragraph"></p> <!-- The paragraph where values are going to be written-->
+        </div>
+        <div class="test123">
+            <!-- The div that hold the paragraph for the flight confirmation information-->
+            <p id="testh1">
+                <!-- Paragraph that show the text if no flights reservations are made-->
+                No Flights Here ... Please Fill The Form Above!
+            </p>
+        </div>
+        <script> /* Tag to start the javascript */
+            function tickets() { // Creating a function called tickets()
+                // Assign Values
+                var flyfrom = document.getElementById("flyfrom").value; // Create a variable called flyfrom which gets the value from the input type  with the id flyfrom
+                var flyto = document.getElementById("flyto").value; // Create a variable called flyto which gets the value from the input type with the id flyto
+                var depart_date = document.getElementById("depart_date").value; // Create a variable called depart_date which gets the value from the input type with the id depart_date
+                var return_date = document.getElementById("return_date").value; // Create a variable called return_date which gets the value from the input type with the id return_date
+                var adults = document.getElementById("adults").value; // Create a variable called adults which gets the value from the input type with the id adults
+                var child = document.getElementById("child").value; // Create a variable called child which gets the value from the input type with the id child
+                var travel = document.getElementById("travel").value; // Create a variable called travel which gets the value from the input type with the id travel
+                // Write Values
+                if (flyfrom != "" && flyto != "" && depart_date != "" && return_date != "" && adults != "" && child != "" && travel != "") { // If Condition to check if all the input types have values on them
+                    if (isNaN(flyfrom) && isNaN(flyto)) { //Checks if flyfrom form and flyto form are not numbers
+                        document.getElementById("testh1").style.display = "none"; // The paragraph "testh1" is removed if the conditions above are met
+                        alert("The Booking Was Made Successfully!"); // The user is shown an alert with the message: The booking was made successfully
+                        document.getElementById("flyfrom_paragraph").innerHTML = "From: " + flyfrom; // Call the paragraph with its corresponding ID and write the values assigned when the function tickets() is called
+                        document.getElementById("flyto_paragraph").innerHTML = "To: " + flyto; // Call the paragraph with its corresponding ID and write the values assigned when the function tickets() is called
+                        document.getElementById("depart_paragraph").innerHTML = "Departure Date: " + depart_date; // Call the paragraph with its corresponding ID and write the values assigned when the function tickets() is called
+                        document.getElementById("return_paragraph").innerHTML = "Return Date: " + return_date; // Call the paragraph with its corresponding ID and write the values assigned when the function tickets() is called
+                        document.getElementById("adults_paragraph").innerHTML = "Adults: " + adults; // Call the paragraph with its corresponding ID and write the values assigned when the function tickets() is called
+                        document.getElementById("child_paragraph").innerHTML = "Children: " + child; // Call the paragraph with its corresponding ID and write the values assigned when the function tickets() is called
+                        document.getElementById("travel_paragraph").innerHTML = "Class: " + travel; // Call the paragraph with its corresponding ID and write the values assigned when the function tickets() is called
+                        location.href = "#second_part"; // Scroll the page to the corresponding ID: second_part
+                    } else {
+                        alert("Destination or Return Should Not Contain Numbers") //Alerts the user if it finds numbers in input form
+                    }
+                } else if (flyfrom != "" && flyto != "" && (depart_date != "" || return_date != "") != "" && adults != "" && child != "" && travel != "") { // If the first condition is not met then this part will be checked
+                    if (isNaN(flyfrom) && isNaN(flyto)) { //Checks if flyfrom form and flyto form are not numbers
+                        document.getElementById("testh1").style.display = "none"; // The paragraph "testh1" is removed if the conditions above are met
+                        alert("The Booking Was Made Successfully! - One Way Flight") //If the conditions above are met the user will see an alert with the message, The Booking Was Successfully - One Way Flight
+                        document.getElementById("flyfrom_paragraph").innerHTML = "From: " + flyfrom; // Call the paragraph with its corresponding ID and write the values assigned when the function tickets() is called
+                        document.getElementById("flyto_paragraph").innerHTML = "To: " + flyto; // Call the paragraph with its corresponding ID and write the values assigned when the function tickets() is called
+                        document.getElementById("depart_paragraph").innerHTML = "Departure Date: " + depart_date; // Call the paragraph with its corresponding ID and write the values assigned when the function tickets() is called
+                        document.getElementById("return_paragraph").innerHTML = "Return Date: One Way Flight"; // Call the paragraph with its corresponding ID and write the values assigned when the function tickets() is called
+                        document.getElementById("adults_paragraph").innerHTML = "Adults: " + adults; // Call the paragraph with its corresponding ID and write the values assigned when the function tickets() is called
+                        document.getElementById("child_paragraph").innerHTML = "Children: " + child; // Call the paragraph with its corresponding ID and write the values assigned when the function tickets() is called
+                        document.getElementById("travel_paragraph").innerHTML = "Class: " + travel; // Call the paragraph with its corresponding ID and write the values assigned when the function tickets() is called
+                        location.href = "#second_part"; // Scroll the page to the corresponding ID: second_part
+                    } else {
+                        alert("Destination or Return Should Not Contain Numbers") //Alerts the user if it finds numbers in input form
+                    }
+                } else { // If any of the conditions above are not met, then this section will be executed
+                    alert("Please Fill Out The Entire Form!") // The user will receive a message: Please Fill Out The Entire Form!
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>

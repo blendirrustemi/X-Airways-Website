@@ -1,0 +1,314 @@
+html{
+    scroll-behavior: smooth; /*Scrolling behaviour the down the page is smooth*/
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    min-width: 930px; /*minimum width is set to 930px*/
+    top: 0; /*margin from the top is 0*/
+    left: 0; /*margin from the top is 0*/
+    width: 100%; /*width of the content is the same as the screen width*/
+    margin: 0; /*margin is set to 0*/
+}
+
+.topcolor{
+    height: 500px; /*the height of the topcolor class is 500px*/
+    background-color: rgb(41, 41, 41); /*background color is rgb(41,41,41)*/
+    margin-top: -85px; /*margin from the top of this class is up 85px*/
+    background-image: url(../Photos/phone2.jpg); /*sets the image we want to put in the background*/
+    background-repeat: no-repeat; /*no repetition of the background image*/
+    text-align:center; /*puts the text position in the center*/
+   
+}
+
+h1.intro{
+    position: relative; /*the position of this element is put relative to where it's supposed to be*/
+    top: 225px; /*margin from the top of this element is put to 225px*/
+}
+
+.nav_left a{
+    text-decoration: none; /*puts no decoration for the links displayed*/
+    color: #fff; /*color of the links is white*/
+    font-size: 17px; /*font size is 17px*/
+}
+
+.nav_left a:hover{
+    transform: scale(1.15, 1.15); /*a 2D transformation is put when we hover above the links */
+    transition: 100ms ease-in-out ; /*transition is due at 100ms with ease-in-out*/
+}
+
+.nav_right a{
+    text-decoration: none; /*puts no decoration for the links displayed*/
+    font-size: 18px; /*font size is 18px*/
+    color: whitesmoke; /*color is set as whitesmoke*/
+    
+}
+
+.nav_right a:hover{
+    transform: scale(1.15, 1.15); /*a 2D transformation is put when we hover above the links */
+    transition: 100ms ease-in-out ; /*transition is due at 100ms with ease-in-out*/
+}
+
+.navbar {
+    background-color: #041C32; /*the background color of the navigation bar is #042C32*/
+    position: sticky; /*the element sticks to its position whenever we scroll dowm */
+    top: 0%; /*margin from the top is 0%*/
+    
+    display: flex; /* the element's display layout is flexed */
+    justify-content: space-between; /*puts a space between elements*/
+}
+
+.navbar div {
+    display: flex; /* the element's display layout is flexed */
+    justify-content: space-between; /*puts a space between elements*/
+}
+
+.nav_left{
+    color: #041C32; /*the color is set to #041C32*/
+    align-items: center; /*the items are aligned in the center*/
+}
+
+.nav_left div{
+    margin: 0 20px; /*margin area  for left-right is 20px and 0 for up-down */
+}
+
+.nav_right{
+    align-items: center; /*elements are aligned in the center*/
+}
+
+.nav_right div{
+    margin: 0 20px; /*margin area for left-right is 20px and 0 for up-down */
+}
+
+/* Box */
+
+.second_part{
+    display: flex; /* the element's display layout is flexed */
+    justify-content: space-evenly; /*the elements are seperated evenly*/
+    margin-bottom: -50px; /*margin from the bottom of the element is -50px*/
+    }
+
+.big_box{
+    display: flex; /* the element's display layout is flexed */
+    padding: 15px; /*padding of the inputs is 15px*/
+    background-color: white; /*background color is white*/
+    margin-top: -5%; /*puts a space between contents*/
+    width: 35%; /* width is 35% of the entire container*/
+    height: 900px; /*height of the box is 800px*/
+    margin-bottom: 100px; /*margin from the bottom is 100px*/
+    margin-right: -100px; /* margin from the bottom is -100px */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; /* the box shadows are rgba(50, 50, 93, 0.25) and rgba(0, 0, 0, 0.3) respectively, with the reflections position at 0px 13px 27px -5px and 0px 8px 16px -8px respectively*/
+}
+
+.p_big p{
+    font-size: 20px; /*the text inside has a font of 20px*/
+    width: 80%; /* has a width of 80% of the entire container */
+    margin:auto; /*margin is set to auto to horizontally center the element within its container*/
+    margin-bottom: 5%; /*margin from the bottom is 5%*/
+    margin-top: 5%; /*margin from the top is 5%*/
+    text-align: center; /*text is aligned in the center*/
+}
+
+h2.contactinfo {
+    text-align: center; /*text is aligned in the center*/
+}
+
+.small_box{
+    padding: 15px; /*padding of the inputs is 15px*/
+    display: flex; /* the element's display layout is flexed */
+    flex-direction: column; /* flex items are directed in the column direction*/
+    background-color: white; /* background color is white */
+    margin-top: -5%; /* margin from the top is -5% */
+    width: 25%; /* width is 25% of the entire container */
+    height: 600px; /* the form has a height of 600px */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; /* the box shadows are rgba(50, 50, 93, 0.25) and rgba(0, 0, 0, 0.3) respectively, with the reflections position at 0px 13px 27px -5px and 0px 8px 16px -8px respectively*/
+}
+
+.blue_border{
+    margin-left: 7.5%; /* margin from the left is 7.5% */
+    width: 80%; /* width is 25% of the entire container */
+    height: 550px; /* width is 25% of the entire container */
+    border: 20px solid #041C32; /* border width is 20px, solid style and color #041C32*/
+}
+
+.blue_border input{
+    height: 45px; /* height of the border is set to 45px */
+    font-size: large; /* font-size is set to large */
+    text-align: center; /* text is aligned in the center */
+    border: none; /* no style, color or width for the border */
+    border-radius: 10px; /* border radius is 10px */
+    box-shadow: rgba(100, 100, 111, 0.2) 2px 2px 20px 2px; /* box shadow is color rgba(100, 100, 111, 0.2) and has the reflection of 2px 2px 20px 2px */
+}
+
+.name_surname{
+    display: flex; /* the element's display layout is flexed */
+    justify-content: space-evenly; /*the elements are seperated evenly*/
+    margin-top: 8%; /* margin from the top is 8% */
+    margin-bottom: 25px; /* margin form the bottom is 25px */
+  
+}
+
+.email_confirm{
+    display: flex; /* the element's display layout is flexed */
+    justify-content: space-evenly; /*the elements are seperated evenly*/
+    margin-bottom: 25px; /* margin form the bottom is 25px */
+}
+
+.t_num{
+    display: flex; /* the element's display layout is flexed */
+    justify-content: space-evenly; /*the elements are seperated evenly*/
+    margin-bottom: 25px; /* margin form the bottom is 25px */
+}
+
+.comment{
+    display: flex; /* the element's display layout is flexed */
+    justify-content: space-evenly; /*the elements are seperated evenly*/
+    margin-bottom: 25px; /* margin form the bottom is 25px */
+}
+
+.comment_question{
+    text-align: center; /* text is aligned in the center */
+    font-size: large; /* font size is set to a large font */
+    border: none; /* no style, color or width for the border */
+    box-shadow: rgba(100, 100, 111, 0.2) 2px 2px 20px 2px; /* box shadow is color rgba(100, 100, 111, 0.2) and has the reflection of 2px 2px 20px 2px */
+}
+
+.submit_btn{
+    display: flex; /* the element's display layout is flexed */
+    justify-content: space-evenly; /*the elements are seperated evenly*/
+}
+
+.btn_submit{
+    border: none; /* no style, color or width for the border */
+    box-shadow: rgba(100, 100, 111, 0.2) 2px 2px 20px 2px; /* box shadow is color rgba(100, 100, 111, 0.2) and has the reflection of 2px 2px 20px 2px */
+    height: 50px; /* the button has a height of 50px */
+    width: 50%; /* the button has a width of 50% of the entire container */
+    color: whitesmoke; /* the button text color is whitesmoke */
+    background-color: #041C32; /* the button background color is #041C32 */
+    font-size: large; /* text font size is large */
+    border-radius: 10px; /* the border radius is 10px */
+}
+
+.btn_submit:hover{
+    background-color: #00b7ff; /* when hovering above the button has a background color of #00b7ff */
+    transition: 180ms ease-in-out; /* it has a transition of 180ms with ease-in-out */
+}
+
+
+/* Small Box */
+
+.plane_gif{
+    margin: auto; /* the element will be centered horizontally within its container */
+    margin-top: 2%; /* the margin from the top is 2%*/
+}
+
+.photo_plane{
+    border-radius: 50px; /* the border radius is 50px */
+    
+}
+
+.p_small{
+    font-size: 20px; /* font size is 20px */
+    width: 80%; /* the box has a width of 50% of the entire container */
+    margin: auto; /* the element will be centered horizontally within its container */
+    margin-bottom: 3%; /* the margin from the bottom is 3%*/
+    margin-top: 2%; /* the margin from the top is 2%*/
+    text-align: center; /* the text is aligned in the center*/
+}
+
+footer
+{ 
+	background-color: #041C32; /* the background color is #041C32*/
+	color: whitesmoke; /* text color is whitesmoke*/
+	padding-top: 10px; /* padding from the top is 10px*/
+	padding-bottom: 40px; /* padding from the bototm is 40px*/
+	font-weight: bolder; /* font weight is bolder*/
+	height: 50px; /* footer has a weight of 50px*/
+	width: 100%; /* the footer has a width of 100% of the entire container */
+	margin: -10px 0 -10px 0; /* margin of -10px is set on top-down and 0px on right-left */
+}
+
+
+.container
+{
+	color: whitesmoke; /* color of the text is whitesmoke */
+	max-width: 1200px; /* the content's max width is set to 1200px */
+	margin-left: 20px; /* margin from the left is 20px */
+
+}
+
+.container a{
+	text-decoration: none; /* no underline or any decoration for the link*/
+	color: whitesmoke; /* the link color is whitesmoke */
+}
+
+.js
+{
+	float: right; /* the box is floated to the right */
+}
+
+.btn 
+{
+	float: right; /* the box is floated to the right */
+	margin-right: 10%; /* margin from the right is 10% */
+	margin-top: -4%; /* margin from the top is -3.2% */
+}
+
+.scl 
+{
+    color: whitesmoke; /* text color is whitesmoke */
+    background-color: #041C32; /* background color is #041C32 */
+    border: none; /* no style, color or width for the border */
+    border-radius: 10px; /* border radius is 10px */
+    width: 120%; /* the box has a width of 100% of the entire container */
+    height: 40px; /* the box has a height of 40px */
+}
+
+.scl:hover{
+    background-color: #00b7ff; /* the background color when hovering is set to #00b7ff */
+    transition: 180ms ease-in-out; /*transition is due at 180ms with ease-in-out*/
+}
+
+#right 
+{
+	color: whitesmoke; /*this id's color is whitesmoke*/
+}
+
+.map{
+    display: flex; /* the element's display layout is flexed */
+    justify-content: center; /* the elements are placed in the center */
+    flex-direction: column; /* flex items are directed in the column direction*/
+    align-items: center; /* the text is aligned in the center*/
+    margin-bottom: 3%; /* margin from the bottom is 3%*/
+    margin-top: 2%; /* margin from the top is 2%*/
+    
+}
+
+.location{
+    width: 60%; /* the location map has a width of 60% of the entire container */
+}
+
+.hr{
+    width: 80%; /* the hr has a width of 80% of the entire container */
+    margin: auto; /* the element will be centered horizontally within its container */
+}
+
+#myBtn { /* Calls and edits the button which goes up the page*/
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #041C32;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="CSS/contact_us.css">
+    <!--Link the corresponding CSSfile to the contact_us.html-->
+</head>
+
+<body>
+
+    <div class="navbar">
+        <!--The navigation part at the top, contaning the name, and links to other html-s-->
+        <div class="nav_left">
+            <!--Adding a DIV for the left part of the first "navbar"-->
+            <div>
+                <a href="main_page.html">
+                    <h3>ERMIRI AIRWAYS</h3>
+                </a>
+                <!--The top most left h3 tag, containing the name:Ermiri Airways-->
+            </div>
+
+        </div>
+
+        <div class="nav_right">
+            <!--Creating the div for the right part of the navigation bar-->
+            <div class="lnk1"><a href="hotels.html">Hotels</a> </div>
+            <!--First link which sends you to the Hotels page-->
+            <div class="lnk1"><a href="contact_us.html">Contact Us</a></div>
+            <!--Second link which sends you to the Contact Us page-->
+            <div class="lnk1"><a href="explore.html">Explore</a></div>
+            <!--Third link which sends you to the Explore page-->
+            <div class="lnk1"><a href="about_us.html">About Us</a> </div>
+            <!--Fourth link which sends you to the About Us page-->
+        </div>
+    </div>
+
+    <div class="topcolor">
+        <!--Created a div for the first image appearing at the top of the page-->
+        <p>
+        <h1 class="intro">We are commited to providing the best service to our customers.</h1>
+        <!--The header which appears at the center of the first image-->
+        </p>
+    </div>
+
+    <!-- Big Box -->
+    <div class="second_part">
+        <!--The div for the second part of the page which contains two boxes-->
+        <div class="big_box">
+            <!--The div for the big box containing the contact info text and the feedback form-->
+            <div class="p_big">
+                <!--The div for the part of the box that contains the contact info text-->
+                <h2 class="contactinfo">Contact Info</h2>
+                <!--The header for the Contact Info at the top-->
+                <p>You can check us on our Social Media at <u><a href="#">Facebook</a></u>, <u><a
+                            href="#">Instagram</a></u>, and <u><a href="#">YouTube</a></u> to view our top-notch
+                    services and customers experiences.
+                    <br>You can also send us an email down below if you have any question, or provide feedback about
+                    your experience with us.
+                </p>
+                <!--The text contained in the page-->
+                <div class="blue_border" id="b_border">
+
+                    <div class="name_surname">
+                        <!--The div for the name and surname input boxes-->
+                        <input type="text" id="name" class="name" placeholder="Name">
+                        <input type="text" id="surname" class="surname" placeholder="Surname">
+                    </div>
+
+                    <div class="email_confirm">
+                        <!--The div for the email and confirm email input boxes-->
+                        <input type="email" id="email_1" class="email" placeholder="Email">
+                        <input type="email" id="email_2" class="email" placeholder="Confirm Email">
+                    </div>
+
+                    <div class="t_num">
+                        <!--The div for the flight code input box-->
+                        <input type="text" id="fly" class="ticket_number" placeholder="Flight Code">
+                    </div>
+
+                    <div class="comment">
+                        <!--The div for the comment box area-->
+                        <textarea name="comment" id="comm" class="comment_question" cols="30" rows="10"
+                            placeholder="Enter Your Questions Here..."></textarea>
+                    </div>
+
+                    <div class="submit_btn">
+                        <!--The div for the submit button-->
+                        <button class="btn_submit" onclick="emailcheck()">Submit</button>
+                        <!--The sumbit button has function attached to it for the JS we will use later in the code-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Small Box -->
+        <div class="small_box">
+            <!-- This div creates the second smaller box on right side of the page-->
+            <div class="p_small">
+                <!--This div contains only the text inside the box-->
+                <h1>Feel something special when flying with us</h1>
+                <!--The header that contains the slogan inside the box-->
+            </div>
+
+            <div class="plane_gif">
+                <!--This div is used to store the plane gif-->
+                <img class="photo_plane" src="Photos/plane.gif" alt="" width="300px">
+                <!--The stored in the box has a width of 300px-->
+            </div>
+        </div>
+
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+    <!--The JavaScript we will use for showing us whether the emails are the same, if the message has been sent successfully or have an alert if the message was not filled-->
+    <script>
+
+        function emailcheck() { //the function we've created is emailcheck and is called whenever we click the submit button
+
+            var n = document.getElementById("name").value //whatever value is placed on id name is then stored on a variable called n here//
+            var s = document.getElementById("surname").value //whatever value is placed on id surname is then stored on a variable called s here//
+            var f = document.getElementById("fly").value //whatever value is placed on id fly is then stored on a variable called f here//
+            var c = document.getElementById("comm").value //whatever value is placed on id comm is then stored on a variable called c here//
+
+            var e1 = document.getElementById("email_1").value //the email placed in the first email box is stored on a variable called e1//
+            var e2 = document.getElementById("email_2").value //the email placed in the confirm email box is stored on a variable called e2//
+
+            if (n != "" && s != "" && f != "" && c != "") { //the if statement will check all the variable n s f c whether they are filled or not
+                if (e1 != e2) { //if the values stored on e1 and e2 do not match show the below alert box
+                    alert("Emails Are Not The Same!")
+                } else {
+                    alert("Your Message Has Been Received Successfully!") //if they do match it will show this alert box that the message is sent successfully
+                    document.getElementById("b_border").style.borderColor = "#30c230" //after the alert box is gone the border of the box will change its color to #30c230
+                }
+            } else {
+                alert("Please Fill Out The Form...") // if there is no value placed on the input boxes the function will then display an alert box to fill out the form after the submit button is pressed 
+            }
+
+        }
+
+
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+    <br><br><br><br>
+    <!--A break between the box and the map-->
+    <div class="hr">
+        <hr>
+    </div>
+    <!--This div we used it for creating a horizontal line between the boxes and the map-->
+
+    <div class="map">
+        <!--The div is used for placing the map-->
+        <h2 class="h2map">Our Offices:</h2>
+        <!--This header shows the Our offices: text-->
+        <iframe class="location"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11752.369133781269!2d21.0295084!3d42.5745637!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7bd7c5dfd98fabc!2sPristina%20International%20Airport%20%E2%80%9CAdem%20Jashari%E2%80%9D!5e0!3m2!1sen!2s!4v1639581459560!5m2!1sen!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <!--The iframe tag will show the rectangular region containing the map for our offices where we can put google maps document inside it-->
+    </div>
+
+
+    <div class="div_foot">
+        <!--This is for putting the footer-->
+        <footer>
+            <!--The footer tag that is used-->
+            <div class="container">
+                <!--This div will display inside the footer the copyright text and the link to the email-->
+                <p>&copy; Copyright, 2021.</p>
+                <a href="#">Contact us: support@ermiriairways.com</a>
+            </div>
+            <div class="btn">
+                <!-- This button was created to call the function "getLocation()" and we assignef it the class"scl" to style it bettter -->
+                <button type="button" onclick="getLocation()" class="scl">Show Current Location</button>
+                <!-- This div with the id"right" was assigned to excecute the function, and it will change its innerHTML if the function is supported by browser -->
+                <div id="right">
+                </div>
+            </div>
+            <!-- We assigned the script tag a class to make it float to the right, and contains the javascript code -->
+            <script class="js">
+                //We assigned variable x to get the HTML from the div with the id "right", into "Geolocation is not supported by this browser." if the function doesn't get excecuted.
+                var x = document.getElementById("right");
+                function getLocation() {
+                    //if the function is supported by the browser, it will call the function "showPosition()"
+                    if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(showPosition);
+                    } else {
+                        x.innerHTML = "Geolocation is not supported by this browser.";
+                    }
+                }
+                //when this function will be called, it will change the innerHTML of the div "right" into your current latitude and longitude 
+                function showPosition(position) {
+                    x.innerHTML = "Latitude: " + position.coords.latitude +
+                        "<br>Longitude: " + position.coords.longitude;
+                }
+            </script>
+
+        </footer>
+    </div>
+</body>
+
+</html>
