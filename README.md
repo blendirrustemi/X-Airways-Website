@@ -1,3 +1,3 @@
 # X-Airways-Website
 
-Open "main_page.html" first.
+Open "index.html" first.
